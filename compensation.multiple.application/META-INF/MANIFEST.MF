@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Compensation Multiple Application
+Bundle-SymbolicName: compensation.multiple.application
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BWCE-Edition-Target: cf
+TIBCO-BW-Edition: bwcf
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 6.2.0 V15 2014-09-04
+TIBCO-BW-Application: META-INF/TIBCO.xml

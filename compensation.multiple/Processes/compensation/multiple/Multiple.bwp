@@ -1134,8 +1134,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.2/@compensationHandler/@activity/@activity/@activities.1"/>
 
                                     <layoutConstraint
-                                    x="122"
-                                    xsi:type="notation:Bounds" y="25"/>
+                                    x="121"
+                                    xsi:type="notation:Bounds" y="18"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>

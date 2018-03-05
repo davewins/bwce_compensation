@@ -2134,9 +2134,8 @@
                                     <value
                                     endTime="2014-09-08T18:19:05.719+0100"
                                     intervalUnit="Second"
-                                    runOnce="true"
                                     startTime="2014-09-08T18:19:05.719+0100"
-                                    timeInterval="1" xsi:type="generalactivities:Timer"/>
+                                    timeInterval="10" xsi:type="generalactivities:Timer"/>
                                 </properties>
                             </activityConfig>
                         </bwext:BWActivity>
@@ -2158,8 +2157,6 @@
                             </bpws:links>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;RemoveFile-input&quot; match=&quot;/&quot;> &lt;tns:RemoveActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="RemoveFile1-input"
                                     name="RemoveFile1"
                                     outputVariable="RemoveFile1"
@@ -2182,7 +2179,7 @@
                                     name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/palette/file#//RemoveFile"/>
                                     <value
-                                    fileName="~/tmp/bw6/file1" xsi:type="file:RemoveFile"/>
+                                    fileName="/tmp/bw6/file1" xsi:type="file:RemoveFile"/>
                                     </properties>
                                     </activityConfig>
                                     </bwext:BWActivity>
@@ -2191,8 +2188,6 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/pe/WriteToLogActivitySchema&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Log-input&quot; match=&quot;/&quot;>&lt;tns:ActivityInput>&lt;message>&lt;xsl:value-of select=&quot;&amp;quot;File 1 Compensated&amp;quot;&quot;/>&lt;/message>&lt;/tns:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="Log-input" name="Log"
                                     tibex:xpdlId="c3d4431f-7309-4131-a806-eead7cc00051" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
@@ -2242,8 +2237,6 @@
                     </bpws:empty>
                     <bpws:extensionActivity>
                         <tibex:activityExtension
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;CreateFile-input&quot; match=&quot;/&quot;> &lt;tns:CreateActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                            expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                             inputVariable="CreateFile1-input"
                             name="CreateFile1"
                             outputVariable="CreateFile1"
@@ -2269,7 +2262,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/file#//CreateFile"/>
                                     <value
                                     createMissingDirectories="true"
-                                    fileName="~/tmp/bw6/file1"
+                                    fileName="/tmp/bw6/file1"
                                     overwrite="true" xsi:type="file:CreateFile"/>
                                     </properties>
                                     </activityConfig>
@@ -2294,8 +2287,6 @@
                             </bpws:links>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;RemoveFile1-input&quot; match=&quot;/&quot;> &lt;tns:RemoveActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="RemoveFile2-input"
                                     name="RemoveFile2"
                                     outputVariable="RemoveFile2"
@@ -2318,7 +2309,7 @@
                                     name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/palette/file#//RemoveFile"/>
                                     <value
-                                    fileName="~/tmp/bw6/file2" xsi:type="file:RemoveFile"/>
+                                    fileName="/tmp/bw6/file2" xsi:type="file:RemoveFile"/>
                                     </properties>
                                     </activityConfig>
                                     </bwext:BWActivity>
@@ -2327,8 +2318,6 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/pe/WriteToLogActivitySchema&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Log1-input&quot; match=&quot;/&quot;>&lt;tns:ActivityInput>&lt;message>&lt;xsl:value-of select=&quot;&amp;quot;File 2 Compensated&amp;quot;&quot;/>&lt;/message>&lt;/tns:ActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="Log1-input"
                                     name="Log1"
                                     tibex:xpdlId="62dd8a73-49e8-493f-a6c2-ec92c2bfbdc6" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
@@ -2379,8 +2368,6 @@
                     </bpws:empty>
                     <bpws:extensionActivity>
                         <tibex:activityExtension
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;CreateFile-input&quot; match=&quot;/&quot;> &lt;tns:CreateActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                            expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                             inputVariable="CreateFile2-input1"
                             name="CreateFile2"
                             outputVariable="CreateFile21"
@@ -2406,7 +2393,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/file#//CreateFile"/>
                                     <value
                                     createMissingDirectories="true"
-                                    fileName="~/tmp/bw6/file2"
+                                    fileName="/tmp/bw6/file2"
                                     overwrite="true" xsi:type="file:CreateFile"/>
                                     </properties>
                                     </activityConfig>
@@ -2449,8 +2436,6 @@
                     </bpws:empty>
                     <bpws:extensionActivity>
                         <tibex:activityExtension
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file/v2&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;ReadFile-input&quot; match=&quot;/&quot;> &lt;tns:ReadActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                            expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                             inputVariable="ReadFile-input"
                             name="ReadFile" outputVariable="ReadFile"
                             tibex:xpdlId="941368b4-e638-460f-bb73-89f79ff264e5" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
@@ -2474,7 +2459,7 @@
                                     <properties name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/palette/file#//ReadFile"/>
                                     <value
-                                    fileName="~/tmp/bw6/file1"
+                                    fileName="/tmp/bw6/file1"
                                     readAs="text" xsi:type="file:ReadFile"/>
                                     </properties>
                                     </activityConfig>
@@ -2495,8 +2480,6 @@
                                     <bpws:links/>
                                     <bpws:extensionActivity>
                                     <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;RemoveFile-input&quot; match=&quot;/&quot;> &lt;tns:RemoveActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="RemoveFile3-input"
                                     name="RemoveFile3"
                                     outputVariable="RemoveFile3"
@@ -2516,7 +2499,7 @@
                                     name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/palette/file#//RemoveFile"/>
                                     <value
-                                    fileName="~/tmp/bw6/file3" xsi:type="file:RemoveFile"/>
+                                    fileName="/tmp/bw6/file3" xsi:type="file:RemoveFile"/>
                                     </properties>
                                     </activityConfig>
                                     </bwext:BWActivity>
@@ -2546,8 +2529,6 @@
                             </bpws:empty>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?> &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.tibco.com/namespaces/tnt/plugins/file&quot; version=&quot;2.0&quot;> &lt;xsl:template name=&quot;CreateFile-input&quot; match=&quot;/&quot;> &lt;tns:CreateActivityInputClass/> &lt;/xsl:template> &lt;/xsl:stylesheet>"
-                                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
                                     inputVariable="CreateFile3-input"
                                     name="CreateFile3"
                                     outputVariable="CreateFile3"
@@ -2574,7 +2555,7 @@
                                     <type href="http://ns.tibco.com/bw/palette/file#//CreateFile"/>
                                     <value
                                     createMissingDirectories="true"
-                                    fileName="~/tmp/bw6/file3"
+                                    fileName="/tmp/bw6/file3"
                                     overwrite="true" xsi:type="file:CreateFile"/>
                                     </properties>
                                     </activityConfig>
@@ -2588,8 +2569,6 @@
             </bpws:scope>
             <bpws:throw faultName="ns3:DefaultFault"
                 faultVariable="Throw-input" name="Throw" tibex:xpdlId="00950665-3d77-4cc3-b3f9-bccd37f0fe6c">
-                <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions" version="2.0"&gt;&lt;xsl:template name="Throw-input" match="/"&gt;&lt;tns:DefaultFault&gt;&lt;message&gt;&lt;xsl:value-of select="'ERROR'"/&gt;&lt;/message&gt;&lt;/tns:DefaultFault&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                 <tibex:inputBindings>
                     <tibex:partBinding
                         expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://schemas.tibco.com/bw/plugins/basic/6.0/Exceptions&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Throw-input&quot; match=&quot;/&quot;>&lt;tns:DefaultFault>&lt;message>&lt;xsl:value-of select=&quot;'ERROR'&quot;/>&lt;/message>&lt;/tns:DefaultFault>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
@@ -2599,10 +2578,8 @@
                 </bpws:targets>
             </bpws:throw>
             <bpws:extensionActivity>
-                <tibex:activityExtension
-                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://tns.tibco.com/bw/activity/sleep/xsd&quot; version=&quot;2.0&quot;>&lt;xsl:template name=&quot;Sleep-input&quot; match=&quot;/&quot;>&lt;tns:SleepInputSchema>&lt;IntervalInMillisec>&lt;xsl:value-of select=&quot;5000&quot;/>&lt;/IntervalInMillisec>&lt;/tns:SleepInputSchema>&lt;/xsl:template>&lt;/xsl:stylesheet>"
-                    expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"
-                    inputVariable="Sleep-input" name="Sleep"
+                <tibex:activityExtension inputVariable="Sleep-input"
+                    name="Sleep"
                     tibex:xpdlId="0b8c1ab1-5783-40f5-a187-c862e10a9658" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="Scope2ToThrow"/>
